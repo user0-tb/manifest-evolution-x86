@@ -5,7 +5,7 @@
            review="https://partner.source.android.com/g/" />
 
   <remote  name="ohd"
-           fetch="git://partner.source.android.com:29418/"
+           fetch="ssh://partner.source.android.com:29418/"
            review="https://partner.source.android.com/g/" />
 
   <default revision="master"
