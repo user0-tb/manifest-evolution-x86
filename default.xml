@@ -34,7 +34,6 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
   <project path="hardware/ril" name="platform/hardware/ril" />
-  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="vendor/sample" name="platform/vendor/sample" />
   
   <project path="prebuilt" name="platform/prebuilt" />
