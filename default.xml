@@ -110,6 +110,7 @@
   <project path="external/jdiff" name="platform/external/jdiff" />
   <project path="external/jhead" name="platform/external/jhead" />
   <project path="external/jpeg" name="platform/external/jpeg" />
+  <project path="external/junit" name="platform/external/junit" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libpcap" name="platform/external/libpcap" />
   <project path="external/libpng" name="platform/external/libpng" />
