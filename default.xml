@@ -30,6 +30,7 @@
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
 
   <project path="prebuilt" name="platform/prebuilt" />
 
