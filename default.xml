@@ -61,7 +61,7 @@
   <project path="frameworks/opt/com.google.android" name="platform/frameworks/opt/com.google.android" />
   <project path="frameworks/opt/com.google.android.googlelogin" name="platform/frameworks/opt/com.google.android.googlelogin" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" />
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" revision="master" />
   <project path="hardware/ril" name="platform/hardware/ril" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
