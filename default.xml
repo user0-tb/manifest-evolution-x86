@@ -53,7 +53,7 @@
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="donut-x86" />
   <project path="vendor/asus/eeepc" name="platform/vendor/asus/eeepc" remote="x86" revision="donut-x86" />
   <project path="vendor/samsung/q1u" name="platform/vendor/samsung/q1u" remote="x86" revision="donut-x86" />
-  <project path="vendor/viliv/s5" name="platform/vendor/viliv/s5" remote="x86" revision="donut-x86" />
+  <project path="vendor/viliv/s5" name="device/viliv/s5" remote="x86" revision="donut-x86" />
 
   <!-- from original Android repositories -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
