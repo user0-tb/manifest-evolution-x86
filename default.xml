@@ -47,10 +47,13 @@
   <project path="external/opencore" name="platform/external/opencore" remote="x86" revision="donut-x86" />
   <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="donut-x86" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" remote="x86" revision="donut-x86" />
+  <project path="hardware/menlow/psb" name="platform/hardware/menlow/psb" remote="x86" revision="android-2.6.29" />
+  <project path="hardware/menlow/ioport" name="platform/hardware/menlow/ioport" remote="x86" revision="donut-x86" />
 
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="donut-x86" />
   <project path="vendor/asus/eeepc" name="platform/vendor/asus/eeepc" remote="x86" revision="donut-x86" />
   <project path="vendor/samsung/q1u" name="platform/vendor/samsung/q1u" remote="x86" revision="donut-x86" />
+  <project path="vendor/viliv/s5" name="platform/vendor/viliv/s5" remote="x86" revision="donut-x86" />
 
   <!-- from original Android repositories -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
