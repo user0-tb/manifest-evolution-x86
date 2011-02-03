@@ -38,6 +38,7 @@
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/chromium" name="platform/external/chromium" />
+  <project path="external/collada" name="platform/external/collada" />
   <project path="external/clang" name="platform/external/clang" />
   <project path="external/curl" name="platform/external/curl" />
   <project path="external/dbus" name="platform/external/dbus" />
@@ -96,6 +97,7 @@
   <project path="external/opencore" name="platform/external/opencore" />
   <project path="external/openssl" name="platform/external/openssl" />
   <project path="external/oprofile" name="platform/external/oprofile" />
+  <project path="external/pcre" name="platform/external/pcre" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ping6" name="platform/external/ping6" />
   <project path="external/ppp" name="platform/external/ppp" />
