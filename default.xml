@@ -139,7 +139,7 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/policies/base" name="platform/frameworks/policies/base" />
-  <project path="frameworks/support" name="platform/support" />
+  <project path="frameworks/support" name="platform/frameworks/support" />
 
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" />
