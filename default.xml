@@ -4,7 +4,7 @@
            fetch="ssh://partner.source.android.com:29418/"
            review="https://partner.source.android.com/g/" />
 
-  <default revision="master"
+  <default revision="honeycomb-mr1"
            remote="ohd" />
 
   <!-- BEGIN open-source projects -->
