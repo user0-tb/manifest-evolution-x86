@@ -39,6 +39,7 @@
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="froyo-x86" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="froyo-x86" />
   <project path="hardware/ril" name="platform/hardware/ril" remote="x86" revision="froyo-x86" />
+  <project path="hardware/wacom/input" name="platform/hardware/wacom/input" remote="x86" revision="froyo-x86" />
   <project path="ndk" name="platform/ndk" remote="x86" revision="froyo-x86" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="x86" revision="froyo-x86" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="x86" revision="froyo-x86" />
