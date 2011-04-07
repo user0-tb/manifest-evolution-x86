@@ -12,7 +12,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="kernel" name="kernel/common" revision="android-2.6.35" remote="x86" />
+  <project path="kernel" name="kernel/common" revision="android-2.6.38" remote="x86" />
   <project path="bionic" name="platform/bionic" remote="x86" revision="froyo-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="froyo-x86" />
   <project path="dalvik" name="platform/dalvik" remote="x86" revision="froyo-x86" />
