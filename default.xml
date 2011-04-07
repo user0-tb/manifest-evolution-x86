@@ -19,6 +19,7 @@
   <project path="development" name="platform/development" remote="x86" revision="froyo-x86" />
   <project path="device/asus/eeepc" name="device/asus/eeepc" remote="x86" revision="froyo-x86" />
   <project path="device/asus/laptop" name="device/asus/laptop" remote="x86" revision="froyo-x86" />
+  <project path="device/common" name="device/common" remote="x86" revision="froyo-x86" />
   <project path="device/dell/sparta" name="device/dell/sparta" remote="x86" revision="froyo-x86" />
   <project path="device/tegatech/tegav2" name="device/tegatech/tegav2" remote="x86" revision="froyo-x86" />
   <project path="device/viewsonic/viewpad10" name="device/viewsonic/viewpad10" remote="x86" revision="froyo-x86" />
