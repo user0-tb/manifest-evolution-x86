@@ -34,6 +34,7 @@
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/ril" name="platform/hardware/ril" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/wacom/input" name="platform/hardware/wacom/input" remote="x86" revision="gingerbread-x86" />
+  <project path="libcore" name="platform/libcore" remote="x86" revision="gingerbread-x86" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="x86" revision="gingerbread-x86" />
   <project path="packages/apps/Camera" name="platform/packages/apps/Camera" remote="x86" revision="gingerbread-x86" />
   <project path="packages/apps/FileManager" name="platform/packages/apps/FileManager" remote="x86" revision="gingerbread-x86" />
@@ -132,7 +133,6 @@
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
-  <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/AccountsAndSyncSettings" name="platform/packages/apps/AccountsAndSyncSettings" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
