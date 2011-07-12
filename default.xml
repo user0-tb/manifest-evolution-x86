@@ -5,7 +5,7 @@
            review="review.source.android.com" />
   <remote  name="x86"
            fetch="git://git.android-x86.org/" />
-  <default revision="refs/tags/android-x86-2.2"
+  <default revision="refs/tags/android-x86-2.2-r2"
            remote="korg" />
 
   <!-- from x86 port repositories -->
@@ -20,8 +20,12 @@
   <project path="development" name="platform/development" remote="x86" />
   <project path="device/asus/eeepc" name="device/asus/eeepc" remote="x86" />
   <project path="device/asus/laptop" name="device/asus/laptop" remote="x86" />
+  <project path="device/common" name="device/common" remote="x86" />
   <project path="device/dell/sparta" name="device/dell/sparta" remote="x86" />
-  <project path="device/viewsonic/viewpad10" name="device/viewsonic/viewpad10" remote="x86" />
+  <project path="device/hp/tx2500" name="device/hp/tx2500" remote="x86" />
+  <project path="device/lenovo/s103t" name="device/lenovo/s103t" remote="x86" />
+  <project path="device/motion/m1400" name="device/motion/m1400" remote="x86" />
+  <project path="device/tegatech/tegav2" name="device/tegatech/tegav2" remote="x86" />
   <project path="device/viliv/s5" name="device/viliv/s5" remote="x86" />
   <project path="device/vm/vm" name="device/vm/vm" remote="x86" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" />
@@ -37,7 +41,10 @@
   <project path="frameworks/policies/base" name="platform/frameworks/policies/base" remote="x86" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" />
+  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" />
   <project path="hardware/ril" name="platform/hardware/ril" remote="x86" />
+  <project path="hardware/wacom/input" name="platform/hardware/wacom/input" remote="x86" />
   <project path="ndk" name="platform/ndk" remote="x86" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="x86" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="x86" />
@@ -120,7 +127,7 @@
   <project name="platform/external/quake" path="external/quake" revision="483b595da7ef9bffa610d1992d565a26fd6b16ed"/>
   <project name="platform/external/safe-iop" path="external/safe-iop" revision="084f46f834a5327a301984a0d72404551cd2cb6f"/>
   <project name="platform/external/skia" path="external/skia" revision="f393f015a3bd0709645b8f464ee41c82fc7624e2"/>
-  <project name="platform/external/sonivox" path="external/sonivox" revision="4fe08534dea6b494dd6bbdfa5be605bd4f0e1ac7"/>
+  <project name="platform/external/sonivox" path="external/sonivox" revision="85c3dba67752f01005aeb83129d684fe7fed4fae"/>
   <project name="platform/external/speex" path="external/speex" revision="9965152ae52eb4dfdafbdcd8b55e39d1a23052e0"/>
   <project name="platform/external/sqlite" path="external/sqlite" revision="904607b881c63fad87fd72a78602d620792b58dc"/>
   <project name="platform/external/srec" path="external/srec" revision="58a59517c49aa1153cf4c5813ac4829e88ca8f48"/>
@@ -146,16 +153,16 @@
   <project name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="bdd13bfab99604e3bd51d8f892c90253a36e638c"/>
   <project name="platform/packages/apps/Email" path="packages/apps/Email" revision="9031e67b7e2ec00033a45155ff644fccb33e6bc7"/>
   <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="44ff7fdb13381fe037c94a669564da513f03eed1"/>
-  <project name="platform/packages/apps/Gallery3D" path="packages/apps/Gallery3D" revision="75ffaf55d1944d7742623dc57fcd611b8bb983d7"/>
+  <project name="platform/packages/apps/Gallery3D" path="packages/apps/Gallery3D" revision="7d7c37aac4fe255245ceecb97302028d2e28ff82"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="09599d4862289c36586b8fbeb0fb31d40c80ac19"/>
   <project name="platform/packages/apps/IM" path="packages/apps/IM" revision="d4eead18d460ee3b4f911bf93078158194bb252c"/>
   <project name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="8a3ef2ed6c2cc89ae96384358fa5fcba58b50ac0"/>
-  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="943dc156a704156b0cb62c76f7a1a80c9768c3d0"/>
+  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="1f4171b81be3d2aafcb5d330af5603925f0c02c9"/>
   <project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="5e5e193b674790bf3195c4c9a0c7c6d6b4a92a09"/>
   <project name="platform/packages/apps/Phone" path="packages/apps/Phone" revision="35bec37cb7529b3c0badc8b384fb2fd7f2ecc37c"/>
   <project name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="20d835c4b499d40504b08f58435d5b9de48ffddf"/>
   <project name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="19a24c39b8c23be1e0f4f91b2a859dd4477976a9"/>
-  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="ac1fd5454801ab451aa23bec1f174b9d8f5b937f"/>
+  <project name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="5e6b45abc45e77a540dfe761810d3a5cd89c5a36"/>
   <project name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="a4941193ca2db19203fc01f0c41ac068553e650b"/>
   <project name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" revision="f075eb5cefb6357aa7562a6d156bda5383ac087d"/>
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="1f04bacb57af5ac14852cc1056f53016560cc656"/>
@@ -172,5 +179,5 @@
   <project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="14595cbe9045755a5aa2bd28989c147c4709268c"/>
   <project name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="f63351742705d7d421166cac23f7e23255a1f72e"/>
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="19d66c1c422f71b06dbea1827372592432c816b8"/>
-  <project name="platform/system/netd" path="system/netd" revision="6a5a63bd690b25d9c0b590f19169d6d3060f2330"/>
+  <project name="platform/system/netd" path="system/netd" revision="00599a9141d2fac8bede300bccff5d6682373b12"/>
 </manifest>
