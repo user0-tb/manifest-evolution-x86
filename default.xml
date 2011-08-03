@@ -12,7 +12,7 @@
   <project path="build" name="platform/build" remote="x86" revision="gingerbread-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="android-2.6.38" />
+  <project path="kernel" name="kernel/common" remote="x86" revision="android-2.6.39" />
   <project path="bionic" name="platform/bionic" remote="x86" revision="gingerbread-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="gingerbread-x86" />
   <project path="development" name="platform/development" remote="x86" revision="gingerbread-x86" />
