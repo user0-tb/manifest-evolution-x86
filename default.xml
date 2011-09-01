@@ -33,6 +33,7 @@
   <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="gingerbread-x86" />
+  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="gingerbread-x86" />
