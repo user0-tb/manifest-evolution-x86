@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
            fetch=".." />
-  <default revision="gingerbread-release"
+  <default revision="gingerbread-mr4-release"
            remote="aosp"
            sync-j="4" />
 
