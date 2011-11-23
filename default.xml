@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="ohd"
-           fetch="ssh://partner.source.android.com:29418/"
-           review="https://partner.source.android.com/g/" />
+  <remote  name="aosp"
+           fetch="git://android-x86.git.sf.net/gitroot/android-x86/korg/" />
+  <remote  name="x86"
+           fetch=".." />
+  <default revision="refs/tags/HLK75D" remote="aosp" sync-j="1" />
 
-  <default revision="honeycomb-mr2"
-           remote="ohd" />
-
-  <!-- BEGIN open-source projects -->
-  <project path="build" name="platform/build">
+  <!-- From x86 port repositories -->
+  <project path="build" name="platform/build" remote="x86" revision="honeycomb-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="bionic" name="platform/bionic" />
+  <project path="kernel" name="kernel/common" remote="x86" revision="android-3.0.1" />
+  <project path="bionic" name="platform/bionic" remote="x86" revision="honeycomb-x86" />
+  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="honeycomb-x86" />
+  <project path="dalvik" name="platform/dalvik" remote="x86" revision="honeycomb-x86" />
+  <project path="development" name="platform/development" remote="x86" revision="honeycomb-x86" />
+  <project path="device/asus/eeepc" name="device/asus/eeepc" remote="x86" revision="honeycomb-x86" />
+  <project path="device/asus/laptop" name="device/asus/laptop" remote="x86" revision="honeycomb-x86" />
+  <project path="device/common" name="device/common" remote="x86" revision="honeycomb-x86" />
+  <project path="device/tegatech/tegav2" name="device/tegatech/tegav2" remote="x86" revision="honeycomb-x86" />
+  <project path="device/vm/vm" name="device/vm/vm" remote="x86" revision="honeycomb-x86" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="honeycomb-x86" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="honeycomb-x86" />
+  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="honeycomb-x86" />
+  <project path="external/drm" name="platform/external/drm" remote="x86" revision="honeycomb-x86" />
+  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="honeycomb-x86" />
+  <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="honeycomb-x86" />
+  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="honeycomb-x86" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" remote="x86" revision="honeycomb-x86" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="honeycomb-x86" />
+  <project path="packages/apps/FileManager" name="platform/packages/apps/FileManager" remote="x86" revision="honeycomb-x86" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="honeycomb-x86" />
+  <project path="prebuilt" name="platform/prebuilt" remote="x86" revision="honeycomb-x86" />
+  <project path="sdk" name="platform/sdk" remote="x86" revision="honeycomb-x86" />
+  <project path="system/bluetooth" name="platform/system/bluetooth" remote="x86" revision="honeycomb-x86" />
+  <project path="system/core" name="platform/system/core" remote="x86" revision="honeycomb-x86" />
+  <project path="system/extras" name="platform/system/extras" remote="x86" revision="honeycomb-x86" />
+  <project path="system/vold" name="platform/system/vold" remote="x86" revision="honeycomb-x86" />
+
+  <!-- BEGIN open-source projects -->
+
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="platform/dalvik" />
-  <project path="development" name="platform/development" />
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" />
+  <project path="device/sample" name="device/sample" revision="master" />
   <project path="external/android-mock" name="platform/external/android-mock" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/apache-xml" name="platform/external/apache-xml" />
@@ -71,7 +100,6 @@
   <project path="external/jsilver" name="platform/external/jsilver" />
   <project path="external/jsr305" name="platform/external/jsr305" />
   <project path="external/junit" name="platform/external/junit" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" />
   <project path="external/libnfc-nxp" name="platform/external/libnfc-nxp" />
@@ -95,10 +123,8 @@
   <project path="external/pcre" name="platform/external/pcre" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ping6" name="platform/external/ping6" />
-  <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" />
   <project path="external/protobuf" name="platform/external/protobuf" />
-  <project path="external/qemu" name="platform/external/qemu" />
   <project path="external/quake" name="platform/external/quake" />
   <project path="external/safe-iop" name="platform/external/safe-iop" />
   <project path="external/skia" name="platform/external/skia" />
@@ -117,13 +143,9 @@
   <project path="external/valgrind" name="platform/external/valgrind" />
   <project path="external/webkit" name="platform/external/webkit" />
   <project path="external/webp" name="platform/external/webp" />
-  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
-  <project path="external/yaffs2" name="platform/external/yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/pixelflinger2" name="platform/frameworks/compile/pixelflinger2" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
@@ -132,15 +154,7 @@
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" />
-  <project path="hardware/msm7k" name="platform/hardware/msm7k" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" />
   <project path="hardware/ril" name="platform/hardware/ril" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="libcore" name="platform/libcore" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
@@ -166,7 +180,6 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
@@ -191,15 +204,9 @@
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
-  <project path="prebuilt" name="platform/prebuilt" />
-  <project path="sdk" name="platform/sdk" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" />
-  <project path="system/core" name="platform/system/core" />
-  <project path="system/extras" name="platform/system/extras" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
-  <project path="system/vold" name="platform/system/vold" />
-  <project path="system/wlan/ti" name="platform/system/wlan/ti" />
+
   <!-- END open-source projects -->
 
 </manifest>
