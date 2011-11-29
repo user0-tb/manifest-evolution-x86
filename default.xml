@@ -15,6 +15,7 @@
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="honeycomb-x86" />
   <project path="dalvik" name="platform/dalvik" remote="x86" revision="honeycomb-x86" />
   <project path="development" name="platform/development" remote="x86" revision="honeycomb-x86" />
+  <project path="device/amd" name="device/amd" remote="x86" revision="honeycomb-x86" />
   <project path="device/asus/eeepc" name="device/asus/eeepc" remote="x86" revision="honeycomb-x86" />
   <project path="device/asus/laptop" name="device/asus/laptop" remote="x86" revision="honeycomb-x86" />
   <project path="device/common" name="device/common" remote="x86" revision="honeycomb-x86" />
