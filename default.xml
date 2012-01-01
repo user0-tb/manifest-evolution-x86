@@ -28,11 +28,13 @@
   <project path="external/drm" name="platform/external/drm" remote="x86" revision="honeycomb-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="honeycomb-x86" />
   <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="honeycomb-x86" />
+  <project path="external/tslib" name="platform/external/tslib" remote="x86" revision="honeycomb-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="honeycomb-x86" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" remote="x86" revision="honeycomb-x86" />
   <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="honeycomb-x86" />
