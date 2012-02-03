@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="korg"
-           fetch="git://android.git.kernel.org/"
-           review="review.source.android.com" />
+  <remote  name="aosp"
+           fetch="git://android-x86.git.sf.net/gitroot/android-x86/korg/" />
   <remote  name="x86"
-           fetch="git://git.android-x86.org/" />
+           fetch=".." />
   <default revision="froyo"
-           remote="korg" />
+           remote="aosp" />
   <!-- from x86 port repositories -->
   <project path="build" name="platform/build" remote="x86" revision="froyo-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -60,7 +59,6 @@
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" remote="x86" revision="froyo-x86" />
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" remote="x86" revision="froyo-x86" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" remote="x86" revision="froyo-x86" />
-  <project path="prebuilt" name="platform/prebuilt" remote="x86" revision="froyo-x86" />
   <project path="sdk" name="platform/sdk" remote="x86" revision="froyo-x86" />
   <project path="system/bluetooth" name="platform/system/bluetooth" remote="x86" revision="froyo-x86" />
   <project path="system/core" name="platform/system/core" remote="x86" revision="froyo-x86" />
@@ -182,6 +180,7 @@
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
+  <project path="prebuilt" name="platform/prebuilt" />
 
   <project path="system/netd" name="platform/system/netd" />
 
