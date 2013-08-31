@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
            fetch=".." />
-  <default revision="refs/tags/android-4.3_r2.1"
+  <default revision="refs/tags/android-4.3_r2.2"
            remote="aosp"
            sync-j="1" />
 
