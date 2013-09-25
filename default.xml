@@ -5,8 +5,9 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
            fetch=".." />
-  <default revision="refs/tags/android-4.3_r2.2"
+  <default revision="refs/tags/android-4.3_r3.1"
            remote="aosp"
+           sync-c="true"
            sync-j="1" />
 
   <!-- from x86 port repositories -->
