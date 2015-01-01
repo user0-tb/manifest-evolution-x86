@@ -14,10 +14,11 @@
   <project path="build" name="platform/build" groups="pdk" remote="x86" revision="kitkat-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="android-3.10" />
+  <project path="kernel" name="kernel/common" remote="x86" revision="android-3.18" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="kitkat-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="kitkat-x86" />
   <project path="dalvik" name="platform/dalvik" remote="x86" revision="kitkat-x86" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="x86" revision="kitkat-x86" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="x86" revision="kitkat-x86" />
   <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="kitkat-x86" />
   <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="kitkat-x86" />
@@ -30,8 +31,8 @@
   <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="kitkat-x86" />
   <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="kitkat-x86" />
   <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="kitkat-x86" />
+  <project path="external/libtruezip" name="platform/external/libtruezip" remote="x86" revision="kitkat-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="kitkat-x86" />
-  <project path="external/modules/rtl8723au" name="platform/external/modules/rtl8723au" remote="x86" revision="kitkat-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="kitkat-x86" />
   <project path="external/parted" name="platform/external/parted" remote="x86" revision="kitkat-x86" />
   <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="kitkat-x86" />
@@ -81,7 +82,6 @@
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="notdefault,device,grouper" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="notdefault,pdk" />
@@ -461,7 +461,7 @@
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" />
-  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
+  <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="notdefault,tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
