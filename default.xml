@@ -31,6 +31,7 @@
   <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="kitkat-x86" />
   <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="kitkat-x86" />
   <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="kitkat-x86" />
+  <project path="external/libpciaccess" name="platform/external/libpciaccess" remote="x86" revision="kitkat-x86" />
   <project path="external/libtruezip" name="platform/external/libtruezip" remote="x86" revision="kitkat-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="kitkat-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="kitkat-x86" />
@@ -462,7 +463,7 @@
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/emulator" name="platform/tools/emulator" groups="notdefault,tools" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="notdefault,tools" />
-  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
+  <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="notdefault,tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
