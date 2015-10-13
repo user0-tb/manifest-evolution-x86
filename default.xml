@@ -4,11 +4,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
-           fetch=".." />
+           fetch="." />
   <default revision="refs/tags/android-4.4.4_r2.0.1"
            remote="aosp"
            sync-c="true"
-           sync-j="1" />
+           sync-j="4" />
 
   <!-- from x86 port repositories -->
   <project path="build" name="platform/build" groups="pdk" remote="x86" revision="kitkat-x86" >
