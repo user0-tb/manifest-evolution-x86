@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp"
-           fetch="git://android-x86.git.sf.net/gitroot/android-x86/korg/" />
+           fetch="https://android.googlesource.com/" />
   <remote  name="x86"
-           fetch=".." />
+           fetch="." />
   <default revision="froyo"
-           remote="aosp" />
+           remote="aosp"
+           sync-c="true"
+           sync-j="4" />
+
   <!-- from x86 port repositories -->
   <project path="build" name="platform/build" remote="x86" revision="froyo-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
