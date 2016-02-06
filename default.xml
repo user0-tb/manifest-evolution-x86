@@ -6,14 +6,14 @@
   <default remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" sync-c="true" sync-j="4"/>
 
   <project name="device/common" revision="6a2995683de147791e516aae2ccb31fdfbe2ad30" upstream="refs/tags/android-4.4.4_r2.0.1"/>
-  <project groups="pdk" name="device/generic/common" remote="x86" revision="0db6aac6b5faac55d3ee0a8d16adf0a6e7afd64d" upstream="kitkat-x86"/>
-  <project groups="pdk" name="device/generic/x86" remote="x86" revision="280d2bd1eb2d5601a002700b2d1c325b7889a4f9" upstream="kitkat-x86"/>
+  <project groups="pdk" name="device/generic/common" remote="x86" revision="eb30573f1c0a2c3282b493de690533314e71c91a" upstream="kitkat-x86"/>
+  <project groups="pdk" name="device/generic/x86" remote="x86" revision="0b4595967486cdf838741de3786342564e12bb3a" upstream="kitkat-x86"/>
   <project groups="pdk" name="device/sample" revision="c162f2cce9cb4d02e7de0db6cb883b9f38526a3a" upstream="refs/tags/android-4.4.4_r2.0.1"/>
-  <project name="kernel/common" path="kernel" remote="x86" revision="580138b75d87aff9da3caf67ff397de270de1478" upstream="kernel-4.0"/>
+  <project name="kernel/common" path="kernel" remote="x86" revision="837bc3dc713b2a876445614333cf844d6a5c4303" upstream="kernel-4.0"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="18f1b5e28734183ff8073fe86dc46bc4ebba8a59" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/art" path="art" revision="d5e4ac0abdeeb4dc13bd05a40bf496299a787536" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project groups="pdk" name="platform/bionic" path="bionic" remote="x86" revision="9df637adea357fcf970cab2a9eaf800b17e9f1f0" upstream="kitkat-x86"/>
-  <project name="platform/bootable/newinstaller" path="bootable/newinstaller" remote="x86" revision="ce42dd08d5e0a73acc64b07b9a2c0ae0f0e89f9e" upstream="kitkat-x86"/>
+  <project name="platform/bootable/newinstaller" path="bootable/newinstaller" remote="x86" revision="2796e618bea4b351254e92cd0fc968bd5992389f" upstream="kitkat-x86"/>
   <project groups="pdk" name="platform/build" path="build" remote="x86" revision="b4510de5db7ae52112ce1ce316f28e7e2672457e" upstream="kitkat-x86">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
@@ -155,7 +155,7 @@
   <project name="platform/external/marisa-trie" path="external/marisa-trie" revision="629ed059b1e85cd8e4de363d8b3dc53c15c3e08a" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/markdown" path="external/markdown" revision="6f2e3554ae38cc90518d32e02cb57d05988270a6" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="c46f53f5e072f23051c4eedef730386f7634dc11" upstream="refs/tags/android-4.4.4_r2.0.1"/>
-  <project name="platform/external/mesa" path="external/mesa" remote="x86" revision="d15afb9605ed239db944c6b73681df8144e48599" upstream="kitkat-x86"/>
+  <project name="platform/external/mesa" path="external/mesa" remote="x86" revision="61dd79b6dcc217d6ca4b4723ac368a1157a58721" upstream="kitkat-x86"/>
   <project groups="pdk" name="platform/external/mksh" path="external/mksh" revision="c87de5d0279a299eec916effc751961347ff5eeb" upstream="master"/>
   <project name="platform/external/mockito" path="external/mockito" revision="34f80a94e45f7110ec3444c1d0ecfacc194d009a" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/mockwebserver" path="external/mockwebserver" revision="e44762f71ed6eeb718a0bb6f3848beb7696fd97d" upstream="refs/tags/android-4.4.4_r2.0.1"/>
