@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="x86"
+           fetch="." />
+
   <remote  name="github"
            fetch="https://github.com"
            review="review.cyanogenmod.org" />
+
+  <remote name="meijjaa"
+           fetch="https://github.com/meijjaa" />
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
@@ -18,11 +24,69 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- AOSP Projects -->
 
-  <project path="build" name="CyanogenMod/android_build" groups="pdk,tradefed">
+  <!-- BEGIN ANDROID-X86 -->
+
+  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" />
+  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="nougat-x86" />
+  <project path="device/generic/firmware" name="device/generic/firmware" remote="x86" revision="nougat-x86" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="nougat-x86" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="nougat-x86" />
+  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" revision="nougat-x86" groups="notdefault" />
+  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="x86" revision="nougat-x86" />
+  <project path="external/bluetooth/sbc" name="platform/external/bluetooth/sbc" remote="x86" revision="nougat-x86" />
+  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="nougat-x86" />
+  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" remote="x86" revision="nougat-x86" />
+  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" remote="x86" revision="nougat-x86" />
+  <project path="external/eject" name="platform/external/eject" remote="x86" revision="nougat-x86" />
+  <project path="external/googleanalytics" name="platform/external/googleanalytics" remote="x86" revision="nougat-x86" />
+  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="nougat-x86" />
+  <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="nougat-x86" />
+  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="nougat-x86" />
+  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="x86" revision="nougat-x86" />
+  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="nougat-x86" />
+  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="x86" revision="nougat-x86" />
+  <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="nougat-x86" />
+  <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="nougat-x86" />
+  <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="nougat-x86" />
+  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="nougat-x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="nougat-x86" />
+  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="hardware/x86power" name="platform/hardware/x86power" remote="x86" revision="nougat-x86" />
+  <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="nougat-x86" />
+  <project path="packages/services/Analytics" name="platform/packages/services/Analytics" remote="x86" revision="nougat-x86" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="nougat-x86" />
+
+  <!-- END ANDROID-X86 -->
+
+  <!-- BEGIN CYANOGENMOD-X86 -->
+
+  <project path="build" name="platform/build" groups="pdk" remote="x86" revision="cm-14.0-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="bionic" name="platform/bionic" remote="x86" groups="pdk" revision="cm-14.0-x86" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="x86" revision="cm-14.0-x86" />
+  <project path="device/generic/android_x86" name="device/generic/x86" groups="pdk" remote="x86" revision="cm-14.0-x86" />
+  <project path="device/generic/android_x86_64" name="device/generic/x86_64" groups="pdk" remote="x86" revision="cm-14.0-x86" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="meijjaa" revision="cm-14.0-x86" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="meijjaa" revision="cm-14.0-x86" />
+  <project path="frameworks/av" name="platform/frameworks/av" remote="x86" revision="cm-14.0-x86" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="cm-14.0-x86" />
+  <project path="frameworks/native" name="platform/frameworks/native" remote="x86" revision="cm-14.0-x86" />
+  <project path="hardware/intel/intel-driver" name="platform/hardware/intel/intel-driver" remote="x86" revision="cm-14.0-x86" />
+  <project path="hardware/intel/libva" name="platform/hardware/intel/libva" remote="x86" revision="cm-14.0-x86" />
+  <project path="hardware/powerbtnd" name="platform/hardware/powerbtnd" remote="x86" revision="cm-14.0-x86" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="cm-14.0-x86" />
+  <project path="packages/apps/Trebuchet" name="platform/packages/apps/Trebuchet" remote="x86" revision="cm-14.0-x86" />
+  <project path="system/core" name="platform/system/core" remote="x86" revision="cm-14.0-x86" />
+  <project path="system/extras" name="platform/system/extras" remote="x86" revision="cm-14.0-x86" />
+
+  <!-- END CYANOGENMOD-X86 -->
+
+  <!-- AOSP Projects -->
+
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="CyanogenMod/android_build_kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -31,7 +95,6 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" remote="aosp" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
-  <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="CyanogenMod/android_dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -40,7 +103,6 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk,notdefault" remote="aosp" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk,notdefault" remote="aosp" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="aosp" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk,notdefault" remote="aosp" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk,notdefault" remote="aosp" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk,notdefault" remote="aosp" />
@@ -95,8 +157,6 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" remote="aosp" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" remote="aosp" />
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" remote="aosp" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" remote="aosp" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -167,7 +227,6 @@
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" remote="aosp" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" remote="aosp" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" remote="aosp" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="aosp" />
   <project path="external/libedit" name="platform/external/libedit" groups="pdk-fs" remote="aosp" />
   <project path="external/libdaemon" name="platform/external/libdaemon" remote="aosp" />
   <project path="external/libevent" name="platform/external/libevent" remote="aosp" />
@@ -202,7 +261,6 @@
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/lld" name="platform/external/lld" groups="pdk-fs" remote="aosp" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="aosp" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/lz4" name="CyanogenMod/android_external_lz4" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="CyanogenMod/android_external_lzma" groups="pdk" />
@@ -294,8 +352,6 @@
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" remote="aosp" />
@@ -303,7 +359,6 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" remote="aosp" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -330,15 +385,12 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="hardware/akm" name="platform/hardware/akm" groups="notdefault" remote="aosp" />
   <project path="hardware/broadcom/libbt" name="CyanogenMod/android_hardware_broadcom_libbt" groups="pdk,notdefault" />
-  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" groups="pdk,broadcom_wlan,notdefault" />
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" remote="aosp" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" remote="aosp" />
-  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="aosp" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" remote="aosp" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" remote="aosp" />
   <project path="hardware/intel/common/libmix" name="CyanogenMod/android_hardware_intel_common_libmix" groups="intel" />
   <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel" remote="aosp" />
-  <project path="hardware/intel/common/libva" name="CyanogenMod/android_hardware_intel_common_libva" groups="intel" />
   <project path="hardware/intel/common/libwsbm" name="CyanogenMod/android_hardware_intel_common_libwsbm" groups="intel" />
   <project path="hardware/intel/common/omx-components" name="CyanogenMod/android_hardware_intel_common_omx-components" groups="intel" />
   <project path="hardware/intel/common/utils" name="CyanogenMod/android_hardware_intel_common_utils" groups="intel" />
@@ -382,7 +434,6 @@
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" groups="apps_stk,pdk-fs" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" groups="pdk-fs" remote="aosp" />
@@ -433,7 +484,7 @@
   <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips,notdefault" remote="aosp" />
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="CyanogenMod/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm,notdefault" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" remote="aosp,notdefault" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm,notdefault" remote="aosp" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="CyanogenMod/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm,notdefault" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" remote="aosp" />
@@ -462,8 +513,6 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" remote="aosp" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" remote="aosp" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" remote="aosp" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
-  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" remote="aosp" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" remote="aosp" />
   <project path="system/keymaster" name="CyanogenMod/android_system_keymaster" groups="pdk" />
@@ -476,7 +525,6 @@
   <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="platform/system/update_engine" remote="aosp" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
   <project path="system/weaved" name="platform/system/weaved" remote="aosp" />
   <project path="system/webservd" name="platform/system/webservd" remote="aosp" />
   <project path="toolchain/binutils" name="toolchain/binutils" remote="aosp" />
