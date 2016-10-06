@@ -23,7 +23,7 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="nougat-x86" />
   <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="nougat-x86" />
-  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" revision="nougat-x86" groups="notdefault" />
+  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" revision="nougat-x86" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="x86" revision="nougat-x86" />
   <project path="external/bluetooth/sbc" name="platform/external/bluetooth/sbc" remote="x86" revision="nougat-x86" />
   <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="nougat-x86" />
@@ -66,6 +66,7 @@
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="x86" revision="nougat-x86" />
   <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="nougat-x86" />
   <project path="packages/services/Analytics" name="platform/packages/services/Analytics" remote="x86" revision="nougat-x86" />
+  <project path="system/bt" name="platform/system/bt" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/core" name="platform/system/core" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="nougat-x86" />
@@ -537,7 +538,6 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="platform/system/bt" groups="notdefault,pdk" />
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
