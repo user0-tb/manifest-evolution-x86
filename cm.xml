@@ -113,7 +113,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk,notdefault" remote="aosp" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk,notdefault" remote="aosp" />
   <project path="device/google/contexthub" name="device/google/contexthub" groups="device" remote="aosp" />
-  <project path="device/sample" name="device/sample" groups="pdk,notdefault" remote="aosp" />
+  <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
   <project path="external/aac" name="CyanogenMod/android_external_aac" groups="pdk" />
   <project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault" remote="aosp" />
   <project path="external/android-clat" name="CyanogenMod/android_external_android-clat" groups="pdk-cw-fs,pdk-fs" />
@@ -329,7 +329,7 @@
   <project path="external/testng" name="platform/external/testng" groups="pdk" remote="aosp" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
-  <project path="external/tinyalsa" name="CyanogenMod/android_external_tinyalsa" groups="pdk" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="aosp" />
   <project path="external/tinycompress" name="CyanogenMod/android_external_tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" />
   <project path="external/tinyxml2" name="CyanogenMod/android_external_tinyxml2" groups="pdk" />
