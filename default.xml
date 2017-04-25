@@ -70,7 +70,7 @@
 
   <!-- from original Android repositories -->
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
+  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" revision="d4f287145feb677e99f0bf30fa6a0e14bd79f896" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
