@@ -48,6 +48,8 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="x86" revision="nougat-x86" />
   <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="nougat-x86" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel,pdk" remote="x86" revision="nougat-x86" />
+  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel,pdk" remote="x86" revision="nougat-x86" />
+  <project path="hardware/intel/common/vaapi" name="platform/hardware/intel/common/vaapi" remote="x86" revision="nougat-x86" />
   <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="nougat-x86" />
   <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="nougat-x86" />
   <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="nougat-x86" />
@@ -58,6 +60,7 @@
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="hardware/x86power" name="platform/hardware/x86power" remote="x86" revision="nougat-x86" />
   <project path="packages/apps/Eleven" name="platform/packages/apps/Eleven" remote="x86" revision="nougat-x86" />
+  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" remote="x86" revision="nougat-x86" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="x86" revision="nougat-x86" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="x86" revision="nougat-x86" />
   <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="nougat-x86" />
@@ -65,6 +68,7 @@
   <project path="system/bt" name="platform/system/bt" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/core" name="platform/system/core" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="system/media" name="platform/system/media" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="nougat-x86" />
 
   <!-- from original Android repositories -->
@@ -409,7 +413,6 @@
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel,pdk" />
   <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel,pdk" />
   <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel,pdk" />
-  <project path="hardware/intel/common/libva" name="platform/hardware/intel/common/libva" groups="intel,pdk" />
   <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel,pdk" />
   <project path="hardware/intel/common/omx-components" name="platform/hardware/intel/common/omx-components" groups="intel,pdk" />
   <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel,pdk" />
@@ -460,7 +463,6 @@
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs"/>
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="notdefault,pdk-fs" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" groups="pdk-fs" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" groups="notdefault,pdk-fs" />
@@ -563,7 +565,6 @@
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
-  <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/nativepower" name="platform/system/nativepower" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
