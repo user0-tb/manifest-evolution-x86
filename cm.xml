@@ -37,6 +37,8 @@
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" remote="x86" revision="nougat-x86" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" remote="x86" revision="nougat-x86" />
   <project path="external/eject" name="platform/external/eject" remote="x86" revision="nougat-x86" />
+  <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="nougat-x86" />
+  <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="nougat-x86" />
   <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="nougat-x86" />
   <project path="external/googleanalytics" name="platform/external/googleanalytics" remote="x86" revision="nougat-x86" />
   <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="x86" revision="nougat-x86" />
@@ -75,8 +77,6 @@
   <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="x86" revision="cm-14.1-x86" />
   <project path="device/generic/android_x86" name="device/generic/x86" groups="pdk" remote="x86" revision="cm-14.1-x86" />
   <project path="device/generic/android_x86_64" name="device/generic/x86_64" groups="pdk" remote="x86" revision="cm-14.1-x86" />
-  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="meijjaa" revision="cm-14.1-x86" />
-  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="meijjaa" revision="cm-14.1-x86" />
   <project path="frameworks/av" name="platform/frameworks/av" remote="x86" revision="cm-14.1-x86" />
   <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="cm-14.1-x86" />
   <project path="frameworks/native" name="platform/frameworks/native" remote="x86" revision="cm-14.1-x86" />
