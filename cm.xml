@@ -80,6 +80,7 @@
   <project path="frameworks/av" name="platform/frameworks/av" remote="x86" revision="cm-14.1-x86" />
   <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="cm-14.1-x86" />
   <project path="frameworks/native" name="platform/frameworks/native" remote="x86" revision="cm-14.1-x86" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="cm-14.1-x86" />
   <project path="hardware/powerbtnd" name="platform/hardware/powerbtnd" remote="x86" revision="cm-14.1-x86" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="cm-14.1-x86" />
   <project path="packages/apps/Trebuchet" name="platform/packages/apps/Trebuchet" remote="x86" revision="cm-14.1-x86" />
@@ -409,7 +410,6 @@
   <project path="hardware/intel/img/hwcomposer" name="LineageOS/android_hardware_intel_img_hwcomposer" groups="intel" />
   <project path="hardware/intel/img/psb_headers" name="LineageOS/android_hardware_intel_img_psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="LineageOS/android_hardware_intel_img_psb_video" groups="intel" />
-  <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="LineageOS/android_hardware_libhardware_legacy" groups="pdk" />
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt,notdefault" remote="aosp" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3,notdefault" remote="aosp" />
