@@ -15,6 +15,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.9" />
+  <project path="art" name="platform/art" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="nougat-x86" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="x86" revision="nougat-x86" />
@@ -73,6 +74,7 @@
   <project path="system/core" name="platform/system/core" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/media" name="platform/system/media" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="nougat-x86" />
 
   <!-- from original Android repositories -->
@@ -83,7 +85,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" />
   <project path="cts" name="platform/cts" groups="notdefault,cts,pdk-cw-fs,pdk-fs" />
@@ -568,7 +569,6 @@
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/nativepower" name="platform/system/nativepower" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/nvram" name="platform/system/nvram" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" />
