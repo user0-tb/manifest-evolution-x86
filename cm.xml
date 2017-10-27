@@ -46,6 +46,7 @@
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="nougat-x86" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="nougat-x86" />
+  <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="nougat-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="nougat-x86" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="x86" revision="nougat-x86" />
   <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="nougat-x86" />
@@ -82,7 +83,6 @@
   <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="cm-14.1-x86" />
   <project path="frameworks/native" name="platform/frameworks/native" remote="x86" revision="cm-14.1-x86" />
   <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="cm-14.1-x86" />
-  <project path="hardware/powerbtnd" name="platform/hardware/powerbtnd" remote="x86" revision="cm-14.1-x86" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="cm-14.1-x86" />
   <project path="packages/apps/Trebuchet" name="platform/packages/apps/Trebuchet" remote="x86" revision="cm-14.1-x86" />
   <project path="system/bt" name="platform/system/bt" groups="pdk" remote="x86" revision="cm-14.1-x86" />
