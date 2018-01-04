@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
            fetch="." />
-  <default revision="refs/tags/android-7.1.2_r33"
+  <default revision="refs/tags/android-7.1.2_r36"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
@@ -37,16 +37,15 @@
   <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="nougat-x86" />
   <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="nougat-x86" />
   <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="x86" revision="nougat-x86" />
-  <project path="external/libtruezip" name="platform/external/libtruezip" remote="x86" revision="nougat-x86" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="nougat-x86" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="nougat-x86" />
   <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="nougat-x86" />
   <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="nougat-x86" />
+  <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="nougat-x86" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="nougat-x86" />
-  <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="nougat-x86" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="nougat-x86" />
   <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="x86" revision="nougat-x86" />
@@ -230,7 +229,6 @@
   <project path="external/jdiff" name="platform/external/jdiff" groups="pdk" />
   <project path="external/jemalloc" name="platform/external/jemalloc" groups="pdk" />
   <project path="external/jetty" name="platform/external/jetty" groups="pdk" />
-  <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed,pdk-fs" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk" />
   <project path="external/jmonkeyengine" name="platform/external/jmonkeyengine" groups="pdk" />
@@ -254,7 +252,6 @@
   <project path="external/libdaemon" name="platform/external/libdaemon" groups="pdk" />
   <project path="external/libevent" name="platform/external/libevent" groups="pdk" />
   <project path="external/libexif" name="platform/external/libexif" groups="pdk" />
-  <project path="external/libgdx" name="platform/external/libgdx" groups="pdk" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/libhevc" name="platform/external/libhevc" groups="pdk" />
   <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="pdk" />
