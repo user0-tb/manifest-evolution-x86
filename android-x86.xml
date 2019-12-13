@@ -66,9 +66,7 @@
   <remove-project name="platform/external/libusb-compat" />
   <remove-project name="platform/external/mesa3d" />
   <remove-project name="platform/external/mksh" />
-  <remove-project name="platform/external/nos/host/android" />
   <remove-project name="platform/external/nos/host/generic" />
-  <remove-project name="platform/external/nos/test/system-test-harness" />
   <remove-project name="platform/external/swiftshader" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
@@ -78,6 +76,7 @@
   <remove-project name="platform/hardware/broadcom/wlan" />
   <remove-project name="platform/hardware/google/av" />
   <remove-project name="platform/hardware/google/easel" />
+  <remove-project name="platform/hardware/google/pixel-sepolicy" />
   <remove-project name="platform/hardware/invensense" />
   <remove-project name="platform/hardware/knowles/athletico/sound_trigger_hal" />
   <remove-project name="platform/hardware/nxp/nfc" />
