@@ -161,6 +161,7 @@
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
+  <remove-project name="platform/system/hardware/interfaces" />
   <remove-project name="platform/system/media" />
   <remove-project name="platform/system/nfc" />
   <remove-project name="platform/system/vold" />
@@ -243,6 +244,7 @@
   <project path="system/bt" name="platform/system/bt" remote="x86" revision="q-x86" />
   <project path="system/core" name="platform/system/core" remote="x86" revision="q-x86" />
   <project path="system/extras" name="platform/system/extras" remote="x86" revision="q-x86" />
+  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" remote="x86" revision="q-x86" />
   <project path="system/media" name="platform/system/media" remote="x86" revision="q-x86" />
   <project path="system/vold" name="platform/system/vold" remote="x86" revision="q-x86" />
 
