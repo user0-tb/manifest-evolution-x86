@@ -26,6 +26,7 @@
   <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="nougat-x86" />
   <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" revision="nougat-x86" />
   <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="nougat-x86" />
+  <project path="external/drm_framebuffer" name="platform/external/drm_framebuffer" remote="x86" revision="nougat-x86" />
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" remote="x86" revision="nougat-x86" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" remote="x86" revision="nougat-x86" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" remote="x86" revision="nougat-x86" />
@@ -39,7 +40,7 @@
   <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="nougat-x86" />
   <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="nougat-x86" />
   <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" remote="x86" revision="nougat-x86" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="x86" revision="nougat-x86" />
+  <project path="external/llvm70" name="platform/external/llvm" remote="x86" revision="nougat-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="nougat-x86" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" remote="x86" revision="nougat-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="nougat-x86" />
@@ -284,6 +285,7 @@
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lld" name="platform/external/lld" groups="pdk-fs" />
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
