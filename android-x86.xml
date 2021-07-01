@@ -218,7 +218,7 @@
   <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="pie-x86" />
   <project path="external/libdrm" name="platform/external/libdrm" remote="x86" revision="pie-x86" />
   <project path="external/libncurses" name="platform/external/libncurses" remote="x86" revision="pie-x86" />
-  <project path="external/llvm90" name="platform/external/llvm" remote="x86" revision="pie-x86" />
+  <project path="external/llvm-project" name="platform/external/llvm-project" remote="x86" revision="pie-x86" />
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="pie-x86" />
   <project path="external/minigbm" name="platform/external/minigbm" remote="x86" revision="pie-x86" />
   <project path="external/minigbm_intel" name="platform/external/minigbm" remote="x86" revision="pie-x86_intel" />
