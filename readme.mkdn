@@ -18,17 +18,52 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 ### Build ###
 
-```bash
+Using `lunch` commnd (recommended)
+You can source the file build/envsetup.sh into your bash environment to get some shell functions to help the building:
 
-# Set up environment
-$ . build/envsetup.sh
+`source build/envsetup.sh`
+Now you can select a target by lunch command:
 
-# Choose a target
-$ lunch evolution_$device-userdebug
+`lunch $TARGET_PRODUCT-$TARGET_BUILD_VARIANT`
+where $TARGET_PRODUCT is any target described in the previous section, and possible values of $TARGET_BUILD_VARIANT are eng, user, userdebug. For example,
 
-# Build the code
-$ mka evolution
-```
+`lunch android_x86_64-userdebug`
+Then you can build an iso file by m command:
+
+`m -jX iso_img`
+m command is equivalent to make, but you can use it in any subdirectory of the android-x86 tree. Replace X by the number of processors you have. For example, if you have a quad core CPU, replace X with 4:
+
+`m -j4 iso_img`
+Since froyo-x86, we also add menu selection to lunch command. Just type lunch, and you will get a list of available targets. Input the number to select a target. Alternatively, just type lunch $number.
+
+To build an rpm file:
+
+`m -jX rpm`
+You need to install the rpm-build package (Fedora based distributions) or rpm package (Debian / Ubuntu based distributions) before building.
+
+The rpm file could be installed to a Linux distribution directly.
+
+Building directly
+You may specify the target to be built by TARGET_PRODUCT variable. For example, to build an iso image for target android_x86, type:
+
+`make -jX iso_img TARGET_PRODUCT=android_x86`
+To generate a live cdrom iso for tegav2, type
+
+`make -jX iso_img TARGET_PRODUCT=tegav2`
+Then you will get an iso file out/target/product/x86/android_x86.iso, etc.
+
+Using buildspec.mk
+You can create a buildspec.mk in your android-x86 directory to remember a particular target product you build often:
+
+``
+TARGET_PRODUCT := android_x86_64
+TARGET_BUILD_VARIANT := userdebug
+TARGET_BUILD_TYPE := release
+TARGET_KERNEL_CONFIG := android-x86_64_defconfig
+``
+With your buildspec.mk file in your android-x86 working directory, you can simply make by
+
+`make -jX iso_img`
 
 # Credits:
 
